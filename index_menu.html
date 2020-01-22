@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <title>jQuery Mobile Menu Plugin Demo</title>
+    </head>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // hide the menu when the page load
+            $("#navigation-list").hide();
+            // when .menuBtn is clicked, do this
+            $(".menuBtn").click(function() {
+                // open the menu with slide effect
+                $("#navigation-list").slideToggle(300);
+            });
+        });
+    </script>
+    <body>
+        <div class="wrapper">
+            <header>
+                <span class="menuBtn"><img src="icon.svg" alt="Menu icon"></span>
+                <nav id="navigation-list">
+                  <ul>
+                        <li><a href="#item1">우기블로그</a></li>
+                        <li><a href="#item2">공감 눌러주세요</a></li>
+                        <li><a href="#item3">감사합니다</a></li>
+                        <li><a href="#item4">choman.tistory.com</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </body>
+</html>
+
